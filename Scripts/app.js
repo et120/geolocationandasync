@@ -9,12 +9,12 @@ navigator.geolocation.getCurrentPosition(success, errorFunc);
 //You can think of this as an if statement if user accepts we run success else we run errorFunc
 
 // Once run, example of geolocation object below
-{
-    coords: {
-        latitude: 32.1234;
-        longitude: 13.1234;
-    }
-}
+// {
+//     coords: {
+//         latitude: 32.1234;
+//         longitude: 13.1234;
+//     }
+// }
 
 //If the user accepts we run success function
 function success(position){
