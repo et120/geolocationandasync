@@ -31,3 +31,18 @@ function errorFunc(error){
 //Async Function Lecture
 
 let rndImage = document.getElementById("rndImage");
+
+//async function allows us to use the key word await, it pauses the execution of the code until the promise is fufilled
+
+async function apiCall(){
+    //We make a fetch request this is our promise
+
+    const promise = await fetch('https://randomuser.me/api/');
+    //wait for our response and parse it into json data
+    const data = await promise.json();
+
+    console.log(data.results[0].picture.large);
+    rndImage.src = data.results[0].picture.large;
+}
+
+apiCall();
