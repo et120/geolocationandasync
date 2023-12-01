@@ -26,3 +26,8 @@ function success(position){
 function errorFunc(error){
     console.log(error.message);
 }
+
+
+//Async Function Lecture
+
+let rndImage = document.getElementById("rndImage");
